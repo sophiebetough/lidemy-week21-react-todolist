@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDom from "react-dom";
-import App from "./App";
-import Background from "./boats.jpg";
+import App from "./components/App";
+import Background from "./images/boats.jpg";
 import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
@@ -10,7 +10,7 @@ const GlobalStyle = createGlobalStyle`
     min-height: 100vh;  
     background: url(${Background}) repeat center / cover;
     text-align: center;
-    font-family: 微軟正黑體;
+    background-attachment: fixed;
   }
 `;
 

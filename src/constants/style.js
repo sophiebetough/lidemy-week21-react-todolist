@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { MEDIA_QUERY_MD } from "./constants/breakpoint";
+import { MEDIA_QUERY_MD } from "./breakpoint";
 
 export const Button = styled.button`
   margin-right: 6px;
@@ -80,6 +80,10 @@ export const Input = styled.input`
   border: 0.5px grey dotted;
   border-radius: 5px;
   padding: 14px 14px;
+
+  ${MEDIA_QUERY_MD} {
+    font-size: 0.9rem;
+  }
 `;
 
 export const FilterButtonWrapper = styled.div`

@@ -43,6 +43,19 @@ function useTodos() {
     );
   };
 
+  // edit todo
+  const handleEditTodo = (e) => {
+    setTodos(
+      todos.map((todo) => {
+        if (todo.id !== Number(e.target.id)) return todo;
+        return {
+          ...todo,
+          content: e.target.value,
+        };
+      })
+    );
+  };
+
   const handleDeleteTodo = (id) => {
     setTodos(todos.filter((todo) => todo.id !== id));
   };
@@ -66,6 +79,7 @@ function useTodos() {
     handleButtonSubmit,
     handleToggleIsDone,
     handleDeleteTodo,
+    handleEditTodo,
     showAllTodos,
     showCompletedTodos,
     showUncompletedTodos,

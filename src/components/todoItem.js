@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import { MEDIA_QUERY_MD } from "./constants/breakpoint";
+import { MEDIA_QUERY_MD } from "../constants/breakpoint";
+import { ReactComponent as CheckedTodo } from "../images/checked.svg";
+import { ReactComponent as UncheckedTodo } from "../images/unchecked.svg";
 
 const TodoButtonWrapper = styled.div`
   display: none;
@@ -25,16 +27,48 @@ const TodoItemWrapper = styled.div`
   }
 `;
 
-const TodoContent = styled.div`
-  color: grey;
+const TodoItemLeft = styled.div`
+  display: flex;
+`;
+
+const ImageWrapper = styled.div`
+  cursor: pointer;
+  box-sizing: border-box;
+  padding: 8px;
+  width: 40px;
+  height: 40px;
+
+  svg {
+    /* width: 90%;
+    height: 90%;
+    object-fit: cover; */
+
+    & path {
+      fill: grey;
+    }
+  }
+`;
+
+const TodoContent = styled.input`
+  color: #000000;
   font-size: 1.3rem;
   word-break: break-word;
+  border: none;
+  border-bottom: 1px solid transparent;
+  outline: none;
+  background-color: rgba(241, 250, 250, 0.8);
+  opacity: 0.4;
 
   ${(props) =>
     props.$isDone &&
     `
     text-decoration: line-through;
-  `}
+    color: red;
+  `};
+
+  ${MEDIA_QUERY_MD} {
+    font-size: 1rem;
+  }
 `;
 
 const Button = styled.button`
@@ -65,12 +99,17 @@ const Button = styled.button`
 const DeleteTodoButton = styled(Button)`
   background-color: #ff8c99;
   color: #f5f5f5;
+
+  ${MEDIA_QUERY_MD} {
+    font-size: 1rem;
+  }
 `;
 
 export default function TodoItem({
   todo,
   handleDeleteTodo,
   handleToggleIsDone,
+  handleEditTodo,
 }) {
   const handleToggleClick = () => {
     handleToggleIsDone(todo.id);
@@ -82,11 +121,19 @@ export default function TodoItem({
 
   return (
     <TodoItemWrapper data-todo-id={todo.id}>
-      <TodoContent $isDone={todo.isDone}>{todo.content}</TodoContent>
+      <TodoItemLeft>
+        <ImageWrapper onClick={handleToggleClick}>
+          {todo.isDone ? <CheckedTodo /> : <UncheckedTodo />}
+        </ImageWrapper>
+        <TodoContent
+          type="text"
+          id={todo.id}
+          value={todo.content}
+          readOnly={todo.isDone}
+          onChange={handleEditTodo}
+        />
+      </TodoItemLeft>
       <TodoButtonWrapper>
-        <Button onClick={handleToggleClick}>
-          {todo.isDone ? "未完成" : "已完成"}
-        </Button>
         <DeleteTodoButton onClick={handleDeleteClick}>刪除</DeleteTodoButton>
       </TodoButtonWrapper>
     </TodoItemWrapper>

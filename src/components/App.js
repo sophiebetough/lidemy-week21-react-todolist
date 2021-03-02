@@ -1,6 +1,6 @@
 import React from "react";
 import TodoItem from "./todoItem";
-import useTodos from "./useTodos";
+import useTodos from "../hooks/useTodos";
 import {
   FilterButton,
   AddTodoButton,
@@ -10,7 +10,7 @@ import {
   TodoInputWrapper,
   Input,
   FilterButtonWrapper,
-} from "./style";
+} from "../constants/style";
 
 export default function App() {
   const {
@@ -18,6 +18,7 @@ export default function App() {
     handleButtonSubmit,
     handleToggleIsDone,
     handleDeleteTodo,
+    handleEditTodo,
     showAllTodos,
     showCompletedTodos,
     showUncompletedTodos,
@@ -51,6 +52,7 @@ export default function App() {
               todo={todo}
               handleDeleteTodo={handleDeleteTodo}
               handleToggleIsDone={handleToggleIsDone}
+              handleEditTodo={handleEditTodo}
             />
           ))}
         <FilterButtonWrapper>
