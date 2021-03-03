@@ -31,6 +31,14 @@ function useTodos() {
     }
   };
 
+  const handleEnterKeyPressed = (e) => {
+    if (e.key === "Enter" && value !== "") {
+      setTodos([newTodoItem, ...todos]);
+      setValue("");
+      id.current++;
+    }
+  };
+
   const handleToggleIsDone = (id) => {
     setTodos(
       todos.map((todo) => {
@@ -77,6 +85,7 @@ function useTodos() {
     setTodos,
     id,
     handleButtonSubmit,
+    handleEnterKeyPressed,
     handleToggleIsDone,
     handleDeleteTodo,
     handleEditTodo,

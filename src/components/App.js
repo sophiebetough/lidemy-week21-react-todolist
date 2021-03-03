@@ -16,6 +16,7 @@ export default function App() {
   const {
     todos,
     handleButtonSubmit,
+    handleEnterKeyPressed,
     handleToggleIsDone,
     handleDeleteTodo,
     handleEditTodo,
@@ -38,6 +39,7 @@ export default function App() {
             placeholder="What needs to be done？"
             value={value}
             onChange={handleChange}
+            onKeyPress={handleEnterKeyPressed}
           />
           <AddTodoButton onClick={handleButtonSubmit}>Add</AddTodoButton>
         </TodoInputWrapper>

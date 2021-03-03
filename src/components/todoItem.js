@@ -39,10 +39,6 @@ const ImageWrapper = styled.div`
   height: 40px;
 
   svg {
-    /* width: 90%;
-    height: 90%;
-    object-fit: cover; */
-
     & path {
       fill: grey;
     }
@@ -72,8 +68,8 @@ const TodoContent = styled.input`
 `;
 
 const Button = styled.button`
-  margin-right: 6px;
   cursor: pointer;
+  margin-right: 6px;
   font-size: 1.3rem;
   height: 2.4rem;
   border: none;
