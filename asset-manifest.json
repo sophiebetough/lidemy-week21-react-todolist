@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.js": "/lidemy-week21-react-todolist/static/js/main.e1de05d3.chunk.js",
-    "main.js.map": "/lidemy-week21-react-todolist/static/js/main.e1de05d3.chunk.js.map",
-    "runtime-main.js": "/lidemy-week21-react-todolist/static/js/runtime-main.87d6d431.js",
-    "runtime-main.js.map": "/lidemy-week21-react-todolist/static/js/runtime-main.87d6d431.js.map",
-    "static/js/2.a865a699.chunk.js": "/lidemy-week21-react-todolist/static/js/2.a865a699.chunk.js",
-    "static/js/2.a865a699.chunk.js.map": "/lidemy-week21-react-todolist/static/js/2.a865a699.chunk.js.map",
-    "index.html": "/lidemy-week21-react-todolist/index.html",
-    "static/js/2.a865a699.chunk.js.LICENSE.txt": "/lidemy-week21-react-todolist/static/js/2.a865a699.chunk.js.LICENSE.txt",
-    "static/media/boats.fd4a3df4.jpg": "/lidemy-week21-react-todolist/static/media/boats.fd4a3df4.jpg",
-    "static/media/checked.9cef2a5d.svg": "/lidemy-week21-react-todolist/static/media/checked.9cef2a5d.svg",
-    "static/media/unchecked.5e7db9db.svg": "/lidemy-week21-react-todolist/static/media/unchecked.5e7db9db.svg"
+    "main.js": "/react-todolist/static/js/main.fa3d8595.chunk.js",
+    "main.js.map": "/react-todolist/static/js/main.fa3d8595.chunk.js.map",
+    "runtime-main.js": "/react-todolist/static/js/runtime-main.26e06350.js",
+    "runtime-main.js.map": "/react-todolist/static/js/runtime-main.26e06350.js.map",
+    "static/js/2.7b0e689a.chunk.js": "/react-todolist/static/js/2.7b0e689a.chunk.js",
+    "static/js/2.7b0e689a.chunk.js.map": "/react-todolist/static/js/2.7b0e689a.chunk.js.map",
+    "index.html": "/react-todolist/index.html",
+    "static/js/2.7b0e689a.chunk.js.LICENSE.txt": "/react-todolist/static/js/2.7b0e689a.chunk.js.LICENSE.txt",
+    "static/media/boats.fd4a3df4.jpg": "/react-todolist/static/media/boats.fd4a3df4.jpg",
+    "static/media/checked.9cef2a5d.svg": "/react-todolist/static/media/checked.9cef2a5d.svg",
+    "static/media/unchecked.5e7db9db.svg": "/react-todolist/static/media/unchecked.5e7db9db.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.87d6d431.js",
-    "static/js/2.a865a699.chunk.js",
-    "static/js/main.e1de05d3.chunk.js"
+    "static/js/runtime-main.26e06350.js",
+    "static/js/2.7b0e689a.chunk.js",
+    "static/js/main.fa3d8595.chunk.js"
   ]
 }
