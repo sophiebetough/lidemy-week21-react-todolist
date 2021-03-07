@@ -4,7 +4,7 @@
 - [Demo](https://sophiebetough.github.io/react-todolist/)
 
 
-![image](放上照片)
+![image](https://github.com/sophiebetough/react-todolist/blob/main/public/react-todolist-demo.gif)
 
 ### 主要功能
 - Todo List 新增、刪除、編輯功能
@@ -13,7 +13,7 @@
 - 清空所有 Todo List
 
 
-![image]()
+![image](https://github.com/sophiebetough/react-todolist/blob/main/public/todo-list-funciton-demo.png)
 
 ### 使用技術
 - 使用 React 開發 Todo List 功能。
