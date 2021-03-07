@@ -13,7 +13,7 @@
 - 清空所有 Todo List
 
 
-![image](https://github.com/sophiebetough/react-todolist/blob/main/public/todo-list-funciton-demo.png)
+![image](https://github.com/sophiebetough/react-todolist/blob/main/public/todo-list-funciton-demo.jpg)
 
 ### 使用技術
 - 使用 React 開發 Todo List 功能。
